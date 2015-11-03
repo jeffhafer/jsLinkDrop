@@ -10,13 +10,15 @@
 				//	* A single handler attached to the all-encompassing "div_main" element is recommended.
 				//	* The handler routine returns whatever element gets the drop.
 				//	* Of course this does require all of your desired drop targets to actually HAVE an ID.
-				
-				
+
 				alert("targetID: " + targetID);		//The ID of the DOM element which got the drop
-				alert("url: " + url);				// The URL of the dropped element
-				
-				//You can add code here to take specific actions based on what element was 
-				
+				alert("url: " + url);			// The URL of the dropped element
+
+				//	* You can add code here to take specific actions based on what target was dropped on.
+				//	* Multiple drop targets could be necessary/desirable.
+				if (targetID = 'div_drop'){
+					alert("Success!");
+				}
 			});
 		}
 	</script>
