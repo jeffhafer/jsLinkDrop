@@ -1,4 +1,4 @@
-// Version 0.1.0
+// Version 0.1.1
 
 function jsLinkDrop(elem, dropAction){
 	document.getElementById(elem).addEventListener('dragover', dragOver, false);
@@ -15,7 +15,7 @@ function jsLinkDrop(elem, dropAction){
 		event.preventDefault();
 
 		var files = event.dataTransfer.files;
-		var targetID = event.target;
+		var target = event.target;
 		if (files.length > 0){
 			for (var i = 0, f; f = files[i]; i++) {
 				var reader = new FileReader();
