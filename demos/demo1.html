@@ -11,20 +11,20 @@
 				//	* The handler routine returns whatever element gets the drop.
 				//	* Of course this does require all of your desired drop targets to actually HAVE an ID.
 
-				alert("target ID: " + target.id);		//The ID of the DOM element which got the drop
-				alert("url: " + url);			// The URL of the dropped element
+				alert("targetID: " + target.id);		//The ID of the DOM element which got the drop
+				alert("url: " + url);				// The URL of the dropped element
 
 				//	* You can add code here to take specific actions based on what target was dropped on.
 				//	* Multiple drop targets could be necessary/desirable.
 				if (target.id = 'div_drop'){
-					alert("Success!");
+					alert("Match div_main!");
 				}
 			});
 		}
 	</script>
 	<body onload='start()'>
 		<div id='div_main'>
-		Demo1
+		Hello!
 		<p>&nbsp;</p>
 		<a href='http://github.com'>github.com</a>
 		<p>&nbsp;</p>
