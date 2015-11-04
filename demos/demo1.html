@@ -5,18 +5,18 @@
 	</head>
 	<script>
 		function start(){
-			var linkDrop = new jsLinkDrop("div_main", function(url, targetID){
+			var linkDrop = new jsLinkDrop("div_main", function(url, target){
 				//	* It is not necessary to add an event handler for each individual drop target.
 				//	* A single handler attached to the all-encompassing "div_main" element is recommended.
 				//	* The handler routine returns whatever element gets the drop.
 				//	* Of course this does require all of your desired drop targets to actually HAVE an ID.
 
-				alert("targetID: " + targetID);		//The ID of the DOM element which got the drop
+				alert("target ID: " + target.id);		//The ID of the DOM element which got the drop
 				alert("url: " + url);			// The URL of the dropped element
 
 				//	* You can add code here to take specific actions based on what target was dropped on.
 				//	* Multiple drop targets could be necessary/desirable.
-				if (targetID = 'div_drop'){
+				if (target.id = 'div_drop'){
 					alert("Success!");
 				}
 			});
